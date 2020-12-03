@@ -1,0 +1,12 @@
+<script src="sqljs-standalone.js"></script>
+<script>
+	initSqlJs().then(SQLJS=>{
+		// Create a table and insert 3 rows
+		db = new SQLJS.Database();
+		db.run("CREATE TABLE Products(pro_id INT PRIMARY KEY, name VARCHAR(255))");
+		db.run("INSERT INTO Products VALUES (?,?), (?,?), (?,?)", [1, 'Product 1', 2, 'Product 2', 3, 'Product 3']);
+		// Query
+		var res = db.exec("SELECT * FROM Products");
+		console.log("My products = " + JSON.stringify(res[0].values));
+	});
+</script>

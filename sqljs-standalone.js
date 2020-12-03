@@ -102,7 +102,6 @@ const base64 = "AGFzbQEAAAAB5wM+YAF/AGABfwF/YAJ/fwF/YAN/f38AYAN/f38Bf2AEf39/fwF/
 var Ka = decode(base64);
 
 
-
 var e;e||(e=typeof Module !== 'undefined' ? Module : {});null;
 e.onRuntimeInitialized=function(){function a(h,l){this.Ra=h;this.db=l;this.Qa=1;this.lb=[]}function b(h,l){this.db=l;l=aa(h)+1;this.eb=ba(l);if(null===this.eb)throw Error("Unable to allocate memory for the SQL string");k(h,m,this.eb,l);this.jb=this.eb;this.$a=this.pb=null}function c(h){this.filename="dbfile_"+(4294967295*Math.random()>>>0);if(null!=h){var l=this.filename,p=l?r("//"+l):"/";l=ca(!0,!0);p=da(p,(void 0!==l?l:438)&4095|32768,0);if(h){if("string"===typeof h){for(var q=Array(h.length),B=
 0,ha=h.length;B<ha;++B)q[B]=h.charCodeAt(B);h=q}ea(p,l|146);q=u(p,"w");fa(q,h,0,h.length,0,void 0);ka(q);ea(p,l)}}this.handleError(g(this.filename,d));this.db=x(d,"i32");nc(this.db);this.fb={};this.Xa={}}var d=y(4),f=e.cwrap,g=f("sqlite3_open","number",["string","number"]),n=f("sqlite3_close_v2","number",["number"]),t=f("sqlite3_exec","number",["number","string","number","number","number"]),w=f("sqlite3_changes","number",["number"]),v=f("sqlite3_prepare_v2","number",["number","string","number","number",

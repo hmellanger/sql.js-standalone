@@ -1,4 +1,4 @@
-<h1>SQL.js standalone</h1>
+# SQL.js standalone
 Run SQL directly in the browser, in web apps or hybrid applications, or NodeJS, all with one single script.
 
 This is a compilation into a standalone, locally executable script of SQL.js javascript code and required WebAssembly (wasm) from SQL.js project ([https://github.com/sql-js/sql.js](https://github.com/sql-js/sql.js)).
@@ -19,6 +19,6 @@ Running SQL in a html file is very easy, even without a web server. Just copy th
 	});
 </script> 
 ```
-<h2>To go further</h2>
-Data can be persisted and synchronized automatically with a SQL/NoSQL backend database using the SyncProxy sync gateway ([https://www.syncproxy.com](https://www.syncproxy.com)).
-
+## To go further
+Data can be persisted and synchronized automatically with a SQL/NoSQL backend database using the SyncProxy sync gateway 
+([https://www.syncproxy.com](https://www.syncproxy.com)).

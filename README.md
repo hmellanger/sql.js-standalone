@@ -1,5 +1,5 @@
 # SQL.js standalone
-Run SQL directly in the browser, in web apps or hybrid applications, or NodeJS, all with one single script.
+Run SQL directly in the browser, in web apps or hybrid applications all with one single script.
 
 This is a compilation into a standalone, locally executable script of SQL.js javascript code and required WebAssembly (wasm) from SQL.js project ([https://github.com/sql-js/sql.js](https://github.com/sql-js/sql.js)).
 
